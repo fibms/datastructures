@@ -97,7 +97,7 @@ public class SegmentTree {
         }
 
         // Divide and conquer.
-        int mid = (low + high) / 2;
+        int mid = (left + right) / 2;
         if (low > mid) {
             // Go down the right side
             return find((2 * index) + 1, mid + 1, right, low, high);
